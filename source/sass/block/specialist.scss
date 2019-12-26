@@ -1,0 +1,72 @@
+.specialist {
+  box-sizing: border-box;
+  position: relative;
+  background: #f1f3fc;
+  padding-top: 52px;
+  padding-bottom: 170px;
+}
+
+.specialist__title {
+  @include title;
+  margin-left: 22px;
+  margin-bottom: 10px;
+}
+
+.specialist__text {
+  @include text;
+  margin: 0;
+}
+
+  .specialist__img {
+    width: 590px;
+    height: auto;
+    position: absolute;
+    top: 13px;
+    left: -22px;
+  }
+
+@media (min-width: 1400px) {
+  .specialist__img {
+    width: 698px;
+    top: -73px;
+    left: -125px;
+}
+}
+
+@media (min-width: 1650px) {
+  .specialist__img {
+    width: 815px;
+    top: -138px;
+    left: -246px;
+}
+}
+
+@media (min-width: 1900px) {
+.specialist__img {
+  width: 907px;
+  left: -382px;
+}
+}
+.specialist__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.specialist__image {
+  position: relative;
+}
+
+.specialist__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.specialist__lists {
+  width: 585px;
+}
+
+.specialist__list {
+  color: $color-mark;
+  margin-bottom: 14px;
+}

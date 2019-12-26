@@ -1,0 +1,70 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "CeraRoundPro", "Calibri", "Arial", sans-serif;
+  color: $text-color;
+  background-color: $basic-color;
+  font-style: normal;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    max-width: 1160px;
+  }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@font-face {
+  font-family: "CeraRoundPro";
+  src: url("../fonts/CeraRoundPro-Regular.woff2") format("woff2"), url("../fonts/CeraRoundPro-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "CeraRoundPro";
+  src: url("../fonts/CeraRoundPro-Bold.woff2") format("woff2"), url("../fonts/CeraRoundPro-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "CeraRoundPro";
+  src: url("../fonts/CeraRoundPro-Medium.woff2") format("woff2"), url("../fonts/CeraRoundPro-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "CeraRoundPro";
+  src: url("../fonts/CeraRoundPro-Light.woff2") format("woff2"), url("../fonts/CeraRoundPro-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}

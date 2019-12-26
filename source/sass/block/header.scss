@@ -1,0 +1,42 @@
+.header {
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 18px;
+}
+.header__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header__logo {
+  display: flex;
+  position: relative;
+  z-index: 5;
+}
+
+.header__logo-img {
+  width: 200px;
+  height: 45px;
+}
+
+
+.header__appeal {
+  border: 2px rgb(84, 137, 195) solid;
+  width: 196px;
+  min-height: 56px;
+  background: none;
+  border-radius: 30px;
+  font-size: 16px;
+  color: rgb(253, 255, 252);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}

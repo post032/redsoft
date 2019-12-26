@@ -1,0 +1,46 @@
+.diary {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.diary__position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diary__motto {
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-align: center;
+  position: relative;
+  margin-bottom: 4%;
+  z-index: 5;
+}
+
+.diary__text {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 2%;
+  position: relative;
+  z-index: 5;
+}
+
+.diary__link {
+   @include button;
+   padding: 18px 32px;
+   margin-top: 3%;
+   position: relative;
+   z-index: 5;
+}
+
+.diary__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  margin-top: 5%;
+}

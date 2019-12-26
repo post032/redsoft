@@ -1,0 +1,15 @@
+section.subscribe
+  div.container
+    div.subscribe__block
+      h2.subscribe__title Получите бесплатный доступ к «Дневнику здоровья»
+      p.subscribe__text Оставьте свою электронную почту<br> и вы узнаете о запуске данного сервиса первым!
+      form(action="#" method="post" onsubmit="return false;").subscribe__form
+        input(type="email" id="email" placeholder="Ваш E-mail" onFocus="this.form.submit.disabled=0" required).subscribe__input
+        span(id="valid")
+        label(for="email").visually-hidden e-mail
+        input(type="submit" id="submit").subscribe__submit
+div.modal
+  div.modal__position
+    div.modal__form
+      p.modal__info Ваша заявка успешно отправлена
+      span.modal__close

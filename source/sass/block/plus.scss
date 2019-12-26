@@ -1,0 +1,75 @@
+.plus {
+  box-sizing: border-box;
+  position: relative;
+  background-color: $color-bg;
+  background-image: url("../img/phones.png");
+  background-position: 80% 298px;
+  background-repeat: no-repeat;
+  padding-top: 127px;
+  padding-bottom: 105px;
+}
+
+.plus__title {
+  @include title;
+  text-align: center;
+  color: $title-color;
+}
+
+.plus__name {
+  @include name;
+  margin-bottom: 6px;
+}
+
+.plus__text {
+  @include text;
+  margin-top: 6px;
+  position: relative;
+  z-index: 2;
+}
+
+.plus__block {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.plus__lists {
+  padding-left: 60px;
+  margin-top: 35px;
+  width: 570px;
+}
+
+.plus__list {
+  font-size: 60px;
+  color: $cyan;
+  line-height: 0.9;
+  text-align: left;
+  position: relative;
+  margin-bottom: 83px;
+}
+
+.plus__lists > .plus__list {
+  list-style-type: none;
+  counter-increment: list;
+}
+
+.plus__lists > .plus__list:after {
+  content: counter(list) " ";
+  display: inline-block;
+  position: absolute;
+  left: -11%;
+  top: 4%;
+}
+
+.plus__lists > .plus__list::before {
+  content: "";
+  border-top: 1px rgba(22, 175, 224,0.251) solid;
+  border-left: 1px rgba(22, 175, 224,0.251) solid;
+  border-bottom: 1px rgba(22, 175, 224,0.251) solid;
+  border-radius: 50%;
+  width: 121px;
+  height: 121px;
+  position: absolute;
+  top: -23%;
+    left: -19%;
+}

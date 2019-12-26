@@ -1,0 +1,50 @@
+.about {
+  margin-top: 120px;
+  background: url("../img/ellips.png") 0 284% no-repeat, url("../img/ellips2.png") 0 232% no-repeat, url("../img/pulse.png") 94% 95% no-repeat;
+}
+
+.about__blocks {
+  display: flex;
+  flex-direction: row;
+  padding-top: 145px;
+  padding-bottom: 160px;
+}
+
+.about__img {
+  width: 335px;
+  height: 652px;
+  margin-top: 8%;
+  margin-left: 10%;
+  margin-right: 4%;
+}
+
+.about__title {
+  @include title;
+  margin-bottom: 10px;
+}
+
+.about__description,
+.about__text {
+  @include text;
+  margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.about__list {
+  color: $color-mark;
+}
+
+.about__link {
+  @include button;
+  padding: 22px 37px;
+}
+
+.about__block {
+  margin-top: 145px;
+}
+
+.about__lists {
+  padding-left: 16px;
+  padding-right: 180px;
+  margin-bottom: 8%;
+}

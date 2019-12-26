@@ -1,0 +1,63 @@
+.function-app {
+  box-sizing: border-box;
+  position: relative;
+  background: #f1f2fa;
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+
+.function-app::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 160px;
+  background: #f1f2fa;
+  border-radius: 90%;
+  position: absolute;
+  top: -80px;
+}
+
+.function-app__title {
+  @include title;
+  text-align: center;
+}
+
+.function-app__img {
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.function-app__border {
+  border: 1px rgb(22, 175, 224) solid;
+  border-radius: 50%;
+  opacity: 0.251;
+  width: 78px;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.function-app__text {
+  @include text;
+  text-align: center;
+}
+
+.function-app__lists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style-type: none;
+    margin: 50px 30px 0px;
+}
+
+.function-app__list {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
